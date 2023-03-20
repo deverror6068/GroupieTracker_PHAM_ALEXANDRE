@@ -1,0 +1,1 @@
+MsgBox "Code d'erreur 18" & vbCrlf & vbCrlf &  "Le serveur a rencontre une erreur inattendue: erreur lors de la creation du fichier log.txt",16, "Fatal Error"

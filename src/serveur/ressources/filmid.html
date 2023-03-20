@@ -1,0 +1,135 @@
+
+ <!DOCTYPE html>
+ 
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style1.css">
+    </head>
+    <body>
+      
+        <header>
+            <img id="Logo" src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/movie.png"> 
+            <p id="Logofont">IMDB Film Checker</p>
+      <div class="boutonmenu">
+                
+             <p class="element" style="margin: 0rem 2rem;">   <img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/magnifier.png" width="25px" height="25px"  style="margin: 0rem 1rem;padding-right: 10px;"><i class="fas fa-cogs icon" style="visibility: hidden"></i>Trouver</p>
+                <div class="menu"> 
+                    
+                    <div class="case">
+                        <p><img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/movie2.png" width="25px" height="25px" style="padding-right: 15px;margin: -0.5rem ;">Rechercher Film</p>
+                        <div class=sous-menu>
+                            <a href="../ressources/filmid.html" style="text-decoration: none;"><p> <img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/ID.png" width="15px" height="15px" style="margin: -0.125rem 0.5rem;"> ID IMDB</p></a>
+                            <div class="menu">
+                                <a href="/title" style="text-decoration: none;"><p> <img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/text.png" width="15px" height="15px" style="margin: -0.125rem 0.5rem;">Par Titre</p></a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <p><img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/compass.png" width="25px" height="25px" style="padding-right: 15px;margin:  0rem 20rem 0rem ;">Parcourir</p>
+                        <div class=sous-menu>
+                            <a href="/home" style="text-decoration: none;"><p><img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/home.png" width="15px" height="15px" style="margin: -0.125rem 0.5rem;">Acceuil</p></a>
+                            <div class="menu">
+                                <p>Recherche par titre</p>
+                               
+                            </div>
+                       
+                        </div>
+                    </div>
+                    <div class="case">
+                        <p>en construction</p>
+                        <div class=sous-menu>
+                            <p>en construction</p>
+                            <div class="menu">
+                                <p>en constuction</p>
+                               
+                            </div>
+                </div>
+                </div>
+                </div>
+                </div>
+        </header>
+        
+        <div class="main" id="research" >
+    
+        <form method="post">
+            <label>Entrez une id IMDB valide:</label>
+            <br>
+            <br>
+            
+            <input class="queryfield" type="text" name="w" value=""><br />
+            <input class="button" type="submit">
+            <br>
+            <br>
+            <p>Résultats pour {{.Query}}</p>
+        </form>
+
+        </div>
+        <a href="/resultsid " target="_blank" style="text-decoration:none;"><div class="main" >
+        
+        <p>{{.Title}}</p>
+
+        <p class="hidden">{{.Response}}</p>
+
+        <p class="apierror">{{.Error}}</p>
+        {{if .Error}}
+
+        <img style="height: 600px; width: 600px;" id="noresult"src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/notfoundver2.png">
+
+        
+
+        {{end}}
+
+    
+        <img id="poster" src="{{.Poster}}"> 
+
+        {{if .Validrequest}}
+
+        <p> <b>Genre :</b> {{.Genre}}</p>
+
+        <p id="plotoverflow">{{.Plot}}</p>
+        
+        {{end}}
+       
+        
+        {{if .Validrequest}}
+        <a href="/resultsid " target="_blank"><p>Plus d'infos</p></a>
+        {{end}}
+
+
+        {{if .Noimage}}
+
+        <img id="posternotfound"src="{{.Niadress}}">
+
+        {{end}}
+        <!-- <p>pas d'image</p> -->
+        
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+       
+        
+        
+        </div></a>
+        <footer><p>Site Réalisé par Pham Alexandre, Touts Droits Réservés</p></footer>
+    </body>
+ </html>
+        

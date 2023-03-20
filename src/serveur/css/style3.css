@@ -1,0 +1,254 @@
+header{
+   
+    height: 100px;
+    height: 6.25rem;
+    margin: 0 -1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    border: #292929;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    background-color: #312f2f;
+    
+    border: #292929 solid 4px;
+    backdrop-filter: blur(4px);
+    box-shadow: #111417  10px 5px 5px;
+  
+    
+}
+
+
+.main{
+    height: 175%;
+    bottom: 150%;
+    width: 50%;
+    margin:  10rem 30rem 10rem;
+    padding-top: 10rem;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    border: solid 1px rgb(87, 87, 87);
+    background-color: #292929;
+    border-radius: 30px;
+    color: rgb(206, 214, 221);
+    box-shadow: #111417  10px 5px 5px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#Logofont{
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    color: rgb(253, 253, 253);
+}
+
+footer{
+     
+    
+    height: 150px;
+    background-color: rgb(48, 45, 45);
+    border: 4px solid rgb(51, 51, 54);
+    bottom: -10;
+    opacity: 0.8;
+    
+    position: static; 
+    margin: 0;
+  
+}
+
+
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+body::-webkit-scrollbar-thumb:vertical:hover {
+   /* background-color: #12ac5d */
+   background-color: rgb(176, 185, 175);
+}
+
+body::-webkit-scrollbar-thumb {
+    /* background: #29ea89 */
+    background-color: rgb(115, 117, 115);
+}
+
+body::-webkit-scrollbar-track {
+   /* background: #111417 */
+   background-color: rgb(40, 43, 39);
+}
+
+.boutonmenu,.boutonmenuspecialcial{
+    background-color:#4c4e4e;
+    text-align: center;
+    width: 153px;
+    height: 52px; 
+    border-right: 1px dotted;
+    margin: 0rem 15rem;
+    border-radius: 10px;
+}
+
+.menu{/* element du menu deroulant*/
+    background-color:#7c8183;
+    text-align: center;
+    width: 153px;
+    height: 52px;
+    display: none;
+    position: absolute;
+}
+.menu:hover{
+    background-color: #484c4e;
+}
+
+
+
+
+.case{ /*Permet de donner une direction au fils de*/
+    text-align: center;
+    background-color:#77797a;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.gauche:hover,.case:hover{
+    background-color: #3d3f41   ;
+}
+.gauche:hover .filsdegauche, .case:hover .sous-menu{
+    display:block ;
+    justify-content:flex-end;
+    position:absolute;
+}
+ .sous-menu{
+    display: none;
+    background-color:#414446;
+    width: 100%;
+    height: fit-content;
+}.sous-menu {
+    left: 100%;
+
+}
+.sous-menu:hover{
+    background-color: #3c3d3f;
+}
+
+p {
+    color: white;
+}
+
+
+.boutonmenu:hover .menu {
+    display: block;
+}
+.boutonmenuspecial:hover .megamenu, .boutonmenuspecial:hover .barre{
+    display: block;
+    position:absolute;
+}
+.elementdegrosmenu{
+    text-align: none;
+    display: flex;
+    display: inline;;
+    font-family: Roboto;
+    color: white;
+    
+    
+}
+
+#Logo:hover{
+    
+    transform:rotate(0.5turn);
+    transition: 5s;
+
+}
+
+.button{
+    color: #000;
+    background-color: #928a8a;
+    align-items: center;
+   
+}
+
+footer{
+     
+    
+    height: 150px;
+    background-color: rgb(48, 45, 45);
+    border: 4px solid rgb(51, 51, 54);
+    bottom: -10;
+    opacity: 0.8;
+    
+    position: static; 
+    margin: 0;
+  
+}
+
+.apierror{
+    color: red;
+    font-weight: bold;
+}
+
+.hidden{
+    visibility: hidden;
+    color: aliceblue;
+}
+
+@media(min-width: 2000px){
+
+    .main{
+        margin: 0rem 45rem;
+      
+        font-weight: normal;
+        font-size: large;
+    }
+    
+
+}
+
+@media only screen and (min-width: 328px) and (max-width: 1500px){
+
+.main{
+    margin: 15rem 0rem;
+    width: 100%;
+
+    font-weight: bolder;
+    font-size: large;
+}
+header{
+   width: 110%;
+   scale: 0.9;
+   margin:  0rem -2.5rem;
+}
+
+.boutonmenu{
+    scale: 0.7;
+    margin: 0rem -1rem;
+}
+
+#Logo{
+    scale: 0.3;
+    margin: 0rem -5rem;
+}
+
+#Logofont{
+    font-size: medium;
+    margin: 0 1rem;
+}
+
+#noresult{
+    scale: 0.4;
+    margin: -7rem;
+}
+
+
+
+
+
+
+}

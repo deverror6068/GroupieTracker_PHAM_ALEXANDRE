@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+ 
+ <html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Acceuil</title>
+        <meta name="description" content="">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=0.1">-->
+        <link rel="stylesheet" href="../css/style2.css">
+    </head>
+    <body>
+      
+        <header>
+            <img id="Logo" src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/movie.png"> 
+            <p id="Logofont">IMDB Film Checker</p>
+      <div class="boutonmenu">
+                
+             <p class="element" style="margin: 0rem 2rem;">   <img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/magnifier.png" width="25px" height="25px"  style="margin: 0rem 1rem;padding-right: 10px;"><i class="fas fa-cogs icon" style="visibility: hidden"></i>Trouver</p>
+                <div class="menu"> 
+                    
+                    <div class="case">
+                        <p><img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/movie2.png" width="25px" height="25px" style="padding-right: 15px;margin: -0.5rem ;">Rechercher Film</p>
+                        <div class=sous-menu>
+                            <a href="../ressources/filmid.html"><p> <img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/ID.png" width="15px" height="15px" style="margin: -0.125rem 0.5rem;"> ID IMDB</p></a>
+                            <div class="menu">
+                                <a href="/title"><p> <img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/text.png" width="15px" height="15px" style="margin: -0.125rem 0.5rem;">Par Titre</p></a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case">
+                        <p><img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/compass.png" width="25px" height="25px" style="padding-right: 15px;margin:  0rem 20rem 0rem ;">Parcourir</p>
+                        <div class=sous-menu>
+                            <a href="/home"><img src="https://raw.githubusercontent.com/deverror6068/Groupie-tracker-image/main/home.png" width="15px" height="15px" style="margin: 0rem 0.5rem;"><p>Acceuil</p></a>
+                            <div class="menu">
+                                <p>Recherche par titre</p>
+                               
+                            </div>
+                       
+                        </div>
+                    </div>
+                    <div class="case">
+                        <p>catégorie</p>
+                        <div class=sous-menu>
+                            <p>sous-catégorie</p>
+                            <div class="menu">
+                                <p>sous-catégorie</p>
+                               
+                            </div>
+                </div>
+                </div>
+                </div>
+                </div>
+        </header>
+        
+        <div class="main" id="research" >
+        <h1 id="titletop"> Rechercher des Films  en toute simplicité</h1>
+        <br>
+        <br>
+       <p id="hometext">Bienvenue sur IMDB checker, un site qui utilise la puissance base de données d'IMBD et l'API <a href=" https://www.omdbapi.com/">Ombdb</a> pour ce faire et vous permettera de trouver tout les film que vous cherchez
+        que ce soit par leurs noms et leurs années ou par leurs ID IMDB </p>
+
+        <br>
+        <br>
+        <h1 id="researchtitle">Paramètre de Recherche</h1>
+      
+        <br>
+        <p id="hometext"> Par titre</p>
+
+        <p> <code>t</code></p> <p id="hometext">Entrer un titre valide et une année valide (l'année doit etre celle de la réalisation du film)</p> 
+        <p id="hometext"> Exemple:</p><p><code>la Route</code>&nbsp;<code>2009</code></p>
+        <p id="hometext">Exemple de requete:</p> <p><code>http://www.omdbapi.com/?t=la Route&y2009[clé d'Api]</code></p>
+        <p id="hometext">Note: les minuscules n'ont aucune influence sur la recherche</p>
+
+        <p>Par ID IMBD</p>
+
+        <p><code>i</code></p> <p id="hometext">Entrer une ID valide (composée de 7 chiffre)</p> 
+         <p id="hometext"> Exemple:</p><p><code>0096198</code></p>
+         <p id="hometext">Exemple de requete:</p> <p><code>https://www.omdbapi.com/?i=tt0096198[clé d'Api]</code></p>
+         <p id="hometext">l'Id est obligatoirement composée de 7 chiffres, </p>
+         <br>
+         <p id="hometext" style="color: red;">L'utilisation d'un chiffre supérieur ou inférieur est très fortement déconseillée car elle ne générera que des résultats invalides </p>
+        <br>
+        <br>
+         <p id="hometext"> Quelques Exemples d'ID à essayer:</p>
+        <br>
+         <p id="hometext">3896198</p>
+         <p id="hometext">0120189</p>
+         <p id="hometext">0088247</p>
+         <p id="hometext">0133093</p>
+
+        
+
+
+
+
+
+
+
+        <p></p>
+        
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p>Plus d'infos</p>
+        
+        
+        </div>
+        <footer><p>Site Réalisé par Pham Alexandre, Touts Droits Réservés</p></footer>
+    </body>
+ </html>
+        

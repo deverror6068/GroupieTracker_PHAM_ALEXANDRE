@@ -1,0 +1,1 @@
+MsgBox "Code d'erreur 16" & vbCrlf & vbCrlf &  "Le serveur a rencontre une erreur inattendue: erreur lors de la lecture du fichier log.txt",16, "Fatal Error"
