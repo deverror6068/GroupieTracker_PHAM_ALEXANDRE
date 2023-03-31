@@ -439,7 +439,7 @@ func HttpHandlerresulttitle(w http.ResponseWriter, r *http.Request) {
 	url1 += urlyear
 	url1 += queryyear
 	url1 += url2
-	url1 = url.PathEscape(url1)
+	url.PathEscape(url1)
 
 	err1 := os.Remove("titlepart1.txt") //supprime le fichier pour eviter des temps d'execution trop longs lors le de la lecture du fichier et d'autres effets indésirables
 
